@@ -1,6 +1,6 @@
 import { useNavigate, useParams, Outlet, useLocation } from 'react-router-dom';
 import useMovie from 'hooks/useMovie';
-import { MovieDetailsBtn } from './App.styled';
+import { MovieDetailsBtn, DetailWrapper } from './App.styled';
 
 
 
@@ -21,9 +21,10 @@ function MovieDetails() {
   const { title, release_date, overview, genres, vote_average, poster_path } =
     filmData;
   return (
-    <div>
+    <DetailWrapper>
+      <img src={`https://image.tmdb.org/t/p/w400/${poster_path}`} alt="" width="200" height="300"/>
+      <p></p>
       <MovieDetailsBtn onClick={handleGoBack}>Go back</MovieDetailsBtn>
-      <img src={`https://image.tmdb.org/t/p/w400/${poster_path}`} alt="" />
       <h2>
         {title} {release_date?.slice(0, 4)}
       </h2>
@@ -43,7 +44,7 @@ function MovieDetails() {
         Reviews
       </MovieDetailsBtn>
       <Outlet />
-    </div>
+    </DetailWrapper>
   );
 };
 

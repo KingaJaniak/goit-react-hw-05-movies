@@ -6,25 +6,40 @@ export const MovieLink = styled(Link)`
   text-decoration: none;
   font-weight: 600;
   color: inherit;
+  cursor:pointer;
+
 
   &:hover {
-    background-color: #ff8800;
+    text-decoration: underline pink;
+    color: pink ;
+
   }
 `;
+export const Header = styled.header`
+margin:0 auto;`
 
+export const H1 = styled.h1`
+color: pink;
+display: flex;
+justify-content: center;
+`
 export const MovieDetailsBtn = styled.button`
   padding: 5px;
-  margin-right: 10px;
+  margin-bottom: 5px;
   height: 30px;
-  border-radius: 0px;
+  width: 100px;  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
   border-width: 0px;
-  background-color: #ff9900;
+  background-color: pink;
   color: white;
   font-size: 15px;
+  column-gap: 5px;
   text-decoration: none;
+  cursor:pointer;
 
   &:hover {
-    background-color: #ff8800;
+    background-color: #770737;
   }
 `;
 
@@ -33,68 +48,68 @@ export const MoviesForm = styled.form`
   flex-direction: row;
   gap: 10px;
 `;
+export const HomeWrapper = styled.div`
+margin:0 auto;`
 
 export const MoviesInput = styled.input`
   width: 250px;
   height: 30px;
   font-size: 15px;
-  border-radius: 0px;
+  border-radius: 5px;
   border-width: 2px;
+`;
+export const DetailWrapper = styled.div`
+display:flex;
+flex-direction: column;
 `;
 
 export const MoviesSearchBtn = styled.button`
   height: 30px;
-  border-radius: 0px;
+  border-radius: 5px;
   border-width: 0px;
-  background-color: #ff6200;
+  background-color: 	#AA336A;
   color: white;
   font-size: 15px;
+  cursor: pointer;
 
   &:hover {
-    background-color: #ff8800;
+    background-color: #FF69B4;
   }
 
   &:active {
-    background-color: #ff9900;
+    background-color: #770737;
   }
-`;
-export const AppContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
 `;
 
 export const AppWrapper = styled.div`
   background-color: white;
-  max-width: 750px;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
   padding: 50px;
   border-radius: 15px;
   display: flex;
   gap: 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: left;
   margin: auto;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 `;
 
 export const HeaderLink = styled(NavLink)`
   padding: 5px;
   margin-right: 10px;
   height: 50px;
-  border-radius: 0px;
+  border-radius: 5px;
   border-width: 0px;
-  background-color: #ff9900;
+  background-color: pink;
   color: white;
   font-size: 15px;
   text-decoration: none;
 
   &:hover {
-    background-color: #ff8800;
+    background-color: #FF69B4;
   }
 
   &.active {
-    background-color: #ff6200;
+    background-color: #770737;
   }
 `;
